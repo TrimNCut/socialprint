@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/socialprint/static/css/main.35b65a75.css",
+    "main.js": "/socialprint/static/js/main.b1669c7e.js",
+    "static/js/453.6a060542.chunk.js": "/socialprint/static/js/453.6a060542.chunk.js",
+    "index.html": "/socialprint/index.html",
+    "main.35b65a75.css.map": "/socialprint/static/css/main.35b65a75.css.map",
+    "main.b1669c7e.js.map": "/socialprint/static/js/main.b1669c7e.js.map",
+    "453.6a060542.chunk.js.map": "/socialprint/static/js/453.6a060542.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35b65a75.css",
+    "static/js/main.b1669c7e.js"
+  ]
+}

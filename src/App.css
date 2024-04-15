@@ -1,38 +1,676 @@
-.App {
-  text-align: center;
+nav{
+    width: 100vw;
+    height: 8vw;
+    display: flex;
+    align-items: center;   
+    gap: 3vw;
+    justify-content: center; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 1.25vw;
+    text-decoration: none;
+    padding: 1vw;
+    background-color: #00000018;
+    border-radius: 0.5vw;
+    transition: all ease 0.4s;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a:hover{
+    margin-top: -1vw;
+    background-color: #0000002d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero{
+    width: 100vw;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-.App-link {
-  color: #61dafb;
+.left{
+    width: 30vw;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    padding-left: 20vw;
+    padding-top: 5vw;
+    animation: toright 0.75s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left h1{
+    font-size: 3vw;
+}
+
+.left h1 label{
+    font-size: 3.5vw;
+    background-color: #4761d6;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.left h1 p{
+    font-size: 4vw;
+}
+
+.left p{
+    font-size: 0.9vw;
+}
+
+.left button{
+    border: 0.25vw solid #5873ee;
+    background-color: #4761d6;
+    width: 10vw;
+    height: 3.5vw;
+    margin-top: 1vw;
+    cursor: pointer;
+    border-radius: 0.5vw;
+    transition: all ease 0.4s;  
+}
+
+.left button:hover{
+    background-color: #0000002d;
+}
+
+.left a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+
+.left span{
+    margin-left: -15vw;
+    margin-bottom: -2vw;
+}
+
+.left span p{
+    font-size: 1.25vw;
+}
+
+.right{
+    width: 50vw;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+}
+
+.banner-con{
+    width: inherit;
+    height: auto;
+}
+
+.bannerimg{
+    width: 17vw;
+    height: 17vw;
+    padding: 2vw;
+    background-color: #ffffff;
+    border-radius: 3vw;
+}
+
+.top{
+    margin-top: 0vw;
+    margin-left: 10vw;
+    z-index: 2;
+    box-shadow: 0vw 0vw 1vw 1vw rgba(0, 0, 0, 0.1);
+    animation: up 0.75s ease;
+}
+
+.mid{
+    margin-top: -12vw;
+    margin-left: 20vw;
+    z-index: 1;
+    border-radius: 0vw 3vw 3vw 0vw;
+    box-shadow: 0vw 0vw 1vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.bottom{
+    margin-top: -8vw;
+    margin-left: -40vw;
+    z-index: 3;
+    border-radius: 3vw 0vw 0vw 3vw;
+    box-shadow: -1vw 1vw 1vw 0vw rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    gap: 1vw;
+}
+
+.logoimg{
+    width: 8vw;
+    height: 8vw;
+    border-radius: 2vw;
+}
+
+.logoname{
+    font-size: 1.25vw;
+}
+
+#services{
+    margin-top: 10vw;
+    width: 100vw;
+    height: auto;
+}
+
+#services h1{
+    color: #ffffff;
+    font-size: 2.75vw;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20vw;
+}
+
+.servicecon{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.servicecon div{
+    width: 18vw;
+    height: 25vw;
+    background-color: #ffffff;
+    margin-top: 5vw;
+    border-radius: 3vw;
+}
+
+.servicecon div img{
+    width: 15vw;
+    height: 15vw;
+    color: #fafafa;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    margin: 1.5vw 1.5vw 0vw 1.5vw;
+    border-radius: 3vw;
+}
+
+.servicecon div p{
+    color: #444444;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    transition: all ease 0.4s;
+}
+
+.topic{
+    color: #444444;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1vw;
+}
+
+.servicecon div p label{
+    color: #2fd661;
+    font-size: 2vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.servicecon div p label label{
+    color: #2fd661;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.service{
+    transition: all ease 0.4s;
+    cursor: pointer;
+    box-shadow: 0vw 0vw 1vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.service:hover{
+    margin-top: 2.5vw;
+}
+
+#clients{
+    margin-top: 5vw;
+    height: auto;
+}
+
+#clients h1{
+    color: #ffffff;
+    font-size: 2.75vw;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20vw;
+}
+
+.allclients{
+    height: 15vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.clientcon{
+    width: 20vw;
+    height: 10vw;
+    background-color: #ffffff;
+    border-radius: 1.25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8vw;
+    font-family: 'Poppins', sans-serif;
+    color: #444444;
+    font-weight: 500;
+    box-shadow: 0vw 0vw 1vw 1vw rgba(0, 0, 0, 0.125);
+}
+
+.clientcon div {
+    margin-left: 2vw;
+    width: 5.5vw;
+    word-wrap: none;
+}
+
+.clientcon p {
+    margin-left: 1vw;
+    margin-right: 2vw;
+    cursor: default;
+}
+
+.clientcon div img{
+    margin-top: 1vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: #ffffff;
+    border-radius: 0.8vw;
+}
+
+.clientcon div p{
+    width: 7vw;
+    word-wrap: none;
+    font-size: 1.25vw;
+}
+
+#contact{
+    margin-top: 5vw;
+    background-color: #ffffff;
+    height: auto;
+    padding-bottom: 2vw;
+}
+
+#contact h1{
+    color: #4761d6;
+    font-size: 2.75vw;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20vw;
+    padding-top: 1vw;
+}
+
+#contact p{
+    color: #4761d6;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20vw;
+    margin-top: 1vw;
+    padding-bottom: 2vw;
+}
+
+.iconcon{
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+
+.icondetails div{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 0.8vw;
+    border: 0.3vw solid #0000001e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.icondetails div img{
+    width: 4vw;
+    height: 4vw;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    cursor: pointer;
+}
+
+.icontext{
+    font-size: 1vw;
+    color: #444444;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.icondetails div:hover{
+    margin-top: -1vw;
+    background-color: #bdbdbd;
+}
+
+footer{
+    width: 100vw;
+    height: 8vw;
+    position: static;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes up{
+    0%{
+        margin-top: 20vw;
+    }
+    100%{
+        margin-top: 0vw;
+    }
+}
+
+@keyframes toright{
+    0%{
+        padding-left: 0vw;
+    }
+    100%{
+        padding-left: 20vw;
+    }
+}
+
+/*For Tablets*/
+
+@media screen and (max-width: 768px){
+    nav{
+        height: 10vw;
+    }
+    nav a{
+        font-size: 2vw;
+    }
+    .left{
+        width: 80vw;
+    }
+    .logo{
+        margin-right: 45vw;
+    }
+    .logo img{
+        width: 10vw;
+        height: 10vw;
+    }
+    .left span p{
+        font-size: 2vw;
+    }
+    .left h1{
+        font-size: 5vw;
+    }
+    .left h1 label{
+        font-size: 6vw;
+    }
+    .left button{
+        width: 15vw;
+        height: 5vw;
+    }
+    .left button a{
+        font-size: 1.5vw;
+    }
+    .left h1 p{
+        font-size: 7vw;
+    }
+    .left p{
+        font-size: 1.5vw;
+    }
+    .right{
+        display: none;
+    }
+    #services h1{
+        font-size: 5vw;
+        padding-left: 12vw;
+    }
+    .servicecon div{
+        width: 20vw;
+        height: 28vw;
+    }
+    .servicecon div img{
+        width: 17vw;
+        height: 17vw;
+    }
+    .servicecon div p{
+        font-size: 2vw;
+    }
+    .servicecon div p label{
+        font-size: 2.5vw;
+    }
+    .servicecon div p label label{
+        font-size: 2vw;
+    }
+    #clients{
+        padding-bottom: 2vw;
+    }
+    #clients h1{
+        font-size: 5vw;
+        padding-left: 12vw;
+    }
+    .clientcon{
+        width: 27vw;
+        height: 13vw;
+        margin-top: 5vw;
+    }
+    .clientcon p{
+        font-size: 1.25vw;
+    }
+    .clientcon div{
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+    }
+    .clientcon div p{
+        font-size: 1.5vw;
+    }
+    .clientcon div img{
+        width: 6vw;
+        height: 6vw;
+    }
+    #contact h1{
+        font-size: 5vw;
+        padding-left: 12vw;
+        padding-top: 3vw;
+    }
+    #contact p{
+        font-size: 2.25vw;
+        padding-left: 12vw;
+        margin-bottom: 2vw;
+    }
+    .iconcon{
+        height: 20vw;
+        padding-bottom: 2vw;
+    }
+    .icondetails div{
+        height: 10vw;
+        width: 10vw;
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+    }
+    .icondetails div img{
+        height: 6vw;
+        width: 6vw;
+    }
+    .icondetails label{
+        font-size: 2vw;
+    }
+    footer p{
+        font-size: 2.25vw;
+        color: #ffffff;
+    }
+}
+
+/*For Mobile*/
+
+@media screen and (max-width: 425px){
+    nav{
+        height: 15vw;
+    }
+    nav a{
+        font-size: 2.5vw;
+        padding: 2.5vw;
+        border-radius: 1.75vw;
+    }
+    .left{
+        width: 90vw;
+        padding-left: 10vw;
+    }
+    .logo{
+        margin-right: 35vw;
+        padding-bottom: 2vw;
+    }
+    .logo img{
+        width: 15vw;
+        height: 15vw;
+    }
+    .left span p{
+        font-size: 3vw;
+    }
+    .left h1{
+        font-size: 8vw;
+    }
+    .left h1 label{
+        font-size: 9vw;
+    }
+    .left button{
+        width: 22vw;
+        height: 7vw;
+        border-radius: 1.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .left p{
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        font-size: 2.5vw;
+    }
+    .left button a{
+        font-size: 2.25vw;
+    }
+    #services h1{
+        font-size: 7vw;
+        padding-left: 12vw;
+    }
+    .servicecon div{
+        width: 24vw;
+        height: 34vw;
+    }
+    .servicecon div img{
+        width: 20vw;
+        height: 20vw;
+        margin: 2vw 2vw 0vw 2vw;
+    }
+    .servicecon div p{
+        font-size: 2.55vw;
+    }
+    .servicecon div p label{
+        font-size: 3.5vw;
+    }
+    .servicecon div p label label{
+        font-size: 3vw;
+    }
+    #clients{
+        padding-bottom: 2vw;
+    }
+    #clients h1{
+        font-size: 7vw;
+        padding-left: 12vw;
+    }
+    .allclients{
+        display: block;
+        height: auto;
+    }
+    .clientcon{
+        width: 80vw;
+        height: 20vw;
+        margin-top: 5vw;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 2.5vw;
+    }
+    .clientcon p{
+        font-size: 2.4vw;
+    }
+    .clientcon div{
+        margin-left: 3vw;
+        margin-right: 7vw;
+        margin-top: 1vw;
+    }
+    .clientcon div p{
+        font-size: 3vw;
+        text-align: center;
+    }
+    .clientcon div img{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 2vw;
+    }
+    #contact h1{
+        font-size: 7vw;
+        padding-left: 12vw;
+        padding-top: 3vw;
+    }
+    #contact p{
+        font-size: 4vw;
+        padding-left: 12vw;
+        margin-bottom: 2vw;
+    }
+    .iconcon{
+        height: 30vw;
+        padding-bottom: 5vw;
+        gap: 4vw;
+    }
+    .icondetails div{
+        height: 15vw;
+        width: 15vw;
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+    }
+    .icondetails div img{
+        height: 8vw;
+        width: 8vw;
+    }
+    .icondetails label{
+        font-size: 3vw;
+    }
+    footer{
+        height: 20vw
+    }
+    footer p{
+        font-size: 4vw;
+        color: #ffffff;
+    }
 }

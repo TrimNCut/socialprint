@@ -185,11 +185,9 @@ nav a:hover{
     width: 1.5vw;
     height: 1.5vw;
 }
-
 .backtotop:hover{
-    margin-top: -1vw;
+    margin-bottom: 3vw;
 }
-
 #services{
     margin-top: 10vw;
     width: 100vw;
@@ -499,13 +497,16 @@ footer p{
         width: 6vw;
         height: 6vw;
         margin-left: 92vw;
-    }
+    }   
     .backtotop a{
         padding: 2vw;
     }
     .backtotop a img{
         width: 2.5vw;
         height: 2.5vw;
+    }
+    .backtotop:hover{
+        margin-bottom: 5vw;
     }
     #services h1{
         font-size: 5vw;

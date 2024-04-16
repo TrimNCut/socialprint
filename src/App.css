@@ -161,6 +161,35 @@ nav a:hover{
     font-size: 1.25vw;
 }
 
+.backtotop{
+    background-color: #5678ff;
+    width: 4vw;
+    height: 4vw;
+    position: fixed;
+    margin-left: 94vw;
+    border-radius: 0.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    bottom: 0;
+    margin-bottom: 2vw;
+}
+
+.backtotop a{
+    text-decoration: none;
+    padding: 1vw;
+}
+.backtotop a img{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.backtotop:hover{
+    margin-top: -1vw;
+}
+
 #services{
     margin-top: 10vw;
     width: 100vw;
@@ -465,6 +494,18 @@ footer p{
     }
     .right{
         display: none;
+    }
+    .backtotop{
+        width: 6vw;
+        height: 6vw;
+        margin-left: 92vw;
+    }
+    .backtotop a{
+        padding: 2vw;
+    }
+    .backtotop a img{
+        width: 2.5vw;
+        height: 2.5vw;
     }
     #services h1{
         font-size: 5vw;

@@ -9,6 +9,7 @@ import consultancy from './img/consultancy.png';
 import user from './img/usericon.png';
 import mail from './img/mail.png';
 import instagram from './img/instagram.png';
+import uparrow from './img/uparrow.png';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="backtotop"><a href="#home"><img src={uparrow} alt="up arrow"/></a></div>
       <div id="services">
         <h1>Our Services</h1>
         <div className="servicecon">

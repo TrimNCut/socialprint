@@ -262,6 +262,7 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     gap: 5vw;
+    animation: move 5s ease infinite;
 }
 
 .clientcon{
@@ -289,6 +290,7 @@ nav a:hover{
     margin-left: 1vw;
     margin-right: 2vw;
     cursor: default;
+    font-size: 0.825vw;
 }
 
 .clientcon div img{
@@ -408,6 +410,18 @@ footer p{
     }
 }
 
+@keyframes move{
+    0%{
+        width: 103vw;
+    }
+    50%{
+        width: 97vw;
+    }
+    100%{
+        width: 103vw;
+    }
+}
+
 /*For Tablets*/
 
 @media screen and (max-width: 768px){
@@ -479,6 +493,9 @@ footer p{
     #clients h1{
         font-size: 5vw;
         padding-left: 12vw;
+    }
+    .allclients{
+        animation: none;
     }
     .clientcon{
         width: 27vw;

@@ -93,13 +93,13 @@ function App() {
             <div>
               <img src={mail} alt="our mail"/>
             </div>
-            <label className="icontext">xxxxxxxxx@xxxxx.com</label> 
+            <label className="icontext">socialprint@socialprint.org</label> 
           </div>
           <div className="icondetails">
             <div>
               <img src={instagram} alt="our instagram"/>
             </div>
-            <label className="icontext">@socialprintofficial</label> 
+            <label className="icontext">socialprintofficial</label> 
           </div>
           {/*<div className="icondetails">
             <div>

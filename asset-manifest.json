@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/socialprint/static/css/main.35b65a75.css",
-    "main.js": "/socialprint/static/js/main.b1669c7e.js",
+    "main.css": "/socialprint/static/css/main.9078bd2d.css",
+    "main.js": "/socialprint/static/js/main.87ba71bf.js",
     "static/js/453.6a060542.chunk.js": "/socialprint/static/js/453.6a060542.chunk.js",
+    "static/media/heroimg2.png": "/socialprint/static/media/heroimg2.91df5d8b22569e9bb608.png",
+    "static/media/heroimg3.png": "/socialprint/static/media/heroimg3.1c8170958e62abee9dda.png",
+    "static/media/shopifyboost.png": "/socialprint/static/media/shopifyboost.03f96fd47a56b658497f.png",
+    "static/media/consultancy.png": "/socialprint/static/media/consultancy.606ac92dd90a1d1ce645.png",
+    "static/media/adscreation.png": "/socialprint/static/media/adscreation.8f560f96021a5da3f7a3.png",
+    "static/media/mail.png": "/socialprint/static/media/mail.c908734b60ba21f7696a.png",
+    "static/media/heroimg1.png": "/socialprint/static/media/heroimg1.a788a8817a93e462adfb.png",
+    "static/media/logo.png": "/socialprint/static/media/logo.19f501fdacede93288c2.png",
+    "static/media/instagram.png": "/socialprint/static/media/instagram.92b3b005dc3c7ef2c5fd.png",
+    "static/media/usericon.png": "/socialprint/static/media/usericon.948e96c5b730c91ed8a8.png",
     "index.html": "/socialprint/index.html",
-    "main.35b65a75.css.map": "/socialprint/static/css/main.35b65a75.css.map",
-    "main.b1669c7e.js.map": "/socialprint/static/js/main.b1669c7e.js.map",
+    "main.9078bd2d.css.map": "/socialprint/static/css/main.9078bd2d.css.map",
+    "main.87ba71bf.js.map": "/socialprint/static/js/main.87ba71bf.js.map",
     "453.6a060542.chunk.js.map": "/socialprint/static/js/453.6a060542.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35b65a75.css",
-    "static/js/main.b1669c7e.js"
+    "static/css/main.9078bd2d.css",
+    "static/js/main.87ba71bf.js"
   ]
 }
